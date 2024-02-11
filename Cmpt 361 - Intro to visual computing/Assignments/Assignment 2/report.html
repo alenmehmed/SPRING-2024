@@ -11,29 +11,21 @@
     <p>Date: Febuary 5th, 2024</p>
     
     <h4>Honor statement:</h4>
-    <p>Enter the honor statement here.</p>
+    <p>I have not cheated in any way when doing this assignment, I did it on my own. I may have asked questions about the assignment on Coursys, I know thats totally fine and even encouraged. I also already know that this class is graded on a curve. I realize that if I cheat and by some miracle not get caught, any increase in my grade will in turn shift the curve and result in lower grades for my classmates. Any undeserved extra grade would come at the cost of all others. Thats horrible! I would never do it</p>
     
     <h4>1: Take four photograph pairs or sets of 4.</h4>
     
     <img src="S1-im1.png" alt="im1" width="300">
     <img src="S1-im2.png" alt="im2" width="300">
-    <!--<br><img src="S1-im3.png" alt="im3" width="300">
-    <img src="S1-im4.png" alt="im4" width="300">-->
     <br><br>
-    <img src="S2-im1.png" alt="im1" width="300">
-    <img src="S2-im2.png" alt="im2" width="300">
-    <!--<br><img src="S2-im3.png" alt="im3" width="300">
-    <img src="S2-im4.png" alt="im4" width="300">-->
+    <img src="S2-im1.JPEG" alt="im1" width="300">
+    <img src="S2-im2.JPEG" alt="im2" width="300">
     <br><br>
-    <img src="S3-im1.png" alt="im1" width="300">
-    <img src="S3-im2.png" alt="im2" width="300">
-    <!--<br><img src="S3-im3.png" alt="im3" width="300">
-    <img src="S3-im4.png" alt="im4" width="300">-->
+    <img src="S3-im1.JPEG" alt="im1" width="300">
+    <img src="S3-im2.JPEG" alt="im2" width="300">
     <br><br>
-    <img src="S4-im1.png" alt="im1" width="300">
-    <img src="S4-im2.png" alt="im2" width="300">
-    <!--<br><img src="S4-im3.png" alt="im3" width="300">
-    <img src="S4-im4.png" alt="im4" width="300">-->
+    <img src="S4-im1.JPEG" alt="im1" width="300">
+    <img src="S4-im2.JPEG" alt="im2" width="300">
     <br><br>
     
     <h4>2: FAST feature detector</h4>
@@ -44,7 +36,10 @@
     <img src="S1-fastR.png" alt="S1-fastR" width="300">
     <img src="S2-fastR.png" alt="S2-fastR" width="300">
     
-    <p>Your comment here</p>
+    <p>Some detected which are close together habe become one, and little features have become big blobs.
+        The computation time for a FAST to FASTR image is so small, i can't even notice it executing.
+        However getting a FAST image takes a while, about 10 seconds for image 1 and 30 for image 2.
+    </p>
     
     
     <h4>3: Point description and matching</h4>
@@ -56,7 +51,13 @@
     <br><br>
     <img src="S2-fastRMatch.png" alt="S2-fastRMatch" width="600">
     
-    <p>Your comment here</p>
+    <p>I used the SURF feature descripition. As expected, the FASTR images have less features detected than 
+        it's corresponding FAST images.
+        There is no performance difference between the two sets of images compared from fast and fast robust.
+        One interesting thing to note is that in S2, the closer trees in im1 are mapped to a different close tree in im2. 
+        Although this is techincally not correct as they're different trees, it's interesting to see that it can notice the 
+        same types of features in different positions. 
+    </p>
     
     <h4>4: RANSAC and Panoramas</h4>
     <img src="S1-panorama.png" alt="S1-panorama" width="600">
@@ -67,7 +68,9 @@
     <br><br>
     <img src="S4-panorama.png" alt="S4-panorama" width="600">
     
-    <p>Your comment here</p>
+    <p> DOing the FAST features instead of FASTR (not calling harris_cornerness measure) will require more trials (higher ransac threshold).
+        Since there are less FASTR feature points than FAST for a specific pair of images, the trials will need more trials to
+        make a satisfactory match. </p>
     
     
     </body> </html>
