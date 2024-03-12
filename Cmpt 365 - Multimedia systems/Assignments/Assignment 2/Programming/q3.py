@@ -165,6 +165,7 @@ def question3(input):
     print("Average dual Codeword length:", AveragedualcodewordLength, "bits per symbol \n")
 
 inputtest = open(r'q3_input.txt', 'r').read()
+question3(inputtest)
 
 inputtestq4no1 = 'ADEECABD'
 question3(inputtestq4no1)
